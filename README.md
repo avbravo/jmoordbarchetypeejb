@@ -8,6 +8,7 @@ Pasos para usar:
   que puede copiar a la carpeta .m2
 
 * Configurar el path de Maven
+
 sudo gedit /etc/profile
 
 export M2_HOME=/home/avbravo/netbeans11/java/maven/
@@ -22,14 +23,15 @@ export PATH=$M2:$PATH
 <pre>
 
 crear una carpeta
-   mkdir adminfacesarchetype
+   mkdir jmoordbarchetypeejb
 
 entrar a la carpeta
-   cd adminfacesarchetype
+   cd jmoordbarchetypeejb
 
 clonar el proyecto
-git clone https://github.com/avbravo/adminfacesarchetype.git
+git clone https://github.com/avbravo/jmoordbarchetypeejb.git
 
+Entrar al directorio donde se muestra el archivo pom.xml
 
 Ejecutar
 
@@ -50,20 +52,20 @@ Con esto tenemos nuestro archetype listo para ser usado
 
 
 
-Crear un proyecto web basado en adminfaces
+Crear un proyecto ebj basado en el archetype
 <pre>
 Pasos:
 1.Crear el directorio
-    mkdir testing
+    mkdir myejb
 
 2. Entrar el directorio
-   cd testing
+   cd myejb
    
 
 Ejecutar
 
 * Recuerde observar la version del archetyp
- mvn archetype:generate -Dfilter=com.avbravo:jmoordbadminfaces-archetype -DarchetypeVersion=0.1
+ mvn archetype:generate -Dfilter=com.avbravo:jmoordbarchetypeejb-archetype -DarchetypeVersion=0.1
 
 Responder a las preguntas
 
@@ -73,13 +75,13 @@ Define value for property 'groupId':
 com.avbravo               
                          
 Define value for property 'artifactId': 
-adminfacesarchetype
+myejb
 
 Define value for property 'version' 1.0-SNAPSHOT: 
  0.1
 
 Define value for property 'package' com.avbravo: 
- com.avbravo
+ com.myejb
 
 Confirm properties configuration:
 
@@ -88,8 +90,7 @@ Responder Y
 
 </pre>
 
-Esto genera el nuevo proyecto basado en adminfaces con todos los componentes. Sugerencia es un proyecto de ejemplo
-el creara todos los paquetes y los incluira en los nuevos paquetes que especifico 
-borrelos para evitar conflictos.
+Esto genera el nuevo proyecto basado en jmoordb con todos los componentes. 
+
 
 
