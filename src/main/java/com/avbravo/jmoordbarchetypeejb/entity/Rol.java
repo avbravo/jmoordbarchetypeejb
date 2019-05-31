@@ -1,9 +1,10 @@
 package com.avbravo.jmoordbarchetypeejb.entity;
 
+import com.avbravo.jmoordb.anotations.Id;
 import com.avbravo.jmoordb.pojos.UserInfo;
 import java.util.List;
 import javax.persistence.Embedded;
-import javax.persistence.Id;
+
 
 public class Rol {
 
