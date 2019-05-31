@@ -18,7 +18,7 @@ public class Usuario {
     private String email;
     @Referenced(documment = "Rol",
             field = "idrol", javatype = "String", lazy = false,
-            repository = "com.avbravo.transporteejb.repository.RolRepository")
+            repository = "com.avbravo.jmoordbarchetypeejb.repository.RolRepository")
     private List<Rol> rol;
    
  
